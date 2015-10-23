@@ -50,9 +50,9 @@ canEldf$votes <- round(runif(nrow(canEldf), min=500, max=15000))
 
 
 ui = shinyUI(fluidPage(
-  fluidRow( rpivotTableOutput("pivot")
-  ,fluidRow( ggvisOutput("lgraph"))
-)))
+  column(6,fluidRow( rpivotTableOutput("pivot"), width = "400px", height = "70%"))
+  ,column(6,fluidRow( ggvisOutput("lgraph")))
+))
 
 server = function(input, output, session) {
 reactive({

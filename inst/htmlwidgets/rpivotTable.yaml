@@ -1,15 +1,15 @@
 dependencies:
 - name: jquery
-  version: 1.11.0
-  src: htmlwidgets/lib/jquery/dist
+  version: 1.11.3
+  src: htmlwidgets/lib/jquery-1.11.3
   script: jquery.min.js
-- name: jquery-ui
-  version: 1.10.4
-  src: htmlwidgets/lib/jqueryui
+- name: jqueryui
+  version: 1.11.4
+  src: htmlwidgets/lib/jqueryui-1.11.4
   script:
-  - jquery-ui.min.js
+  - jquery-ui-1.11.4.js
   - jquery.ui.touch-punch.min.js
-  stylesheet: jquery-ui.min.css
+  stylesheet: jquery-ui-1.11.4.css
 - name: c3
   version: 0.4.10
   src: htmlwidgets/lib/c3
